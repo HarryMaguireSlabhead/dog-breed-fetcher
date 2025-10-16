@@ -49,8 +49,8 @@ public class DogApiBreedFetcher implements BreedFetcher {
 
             return subBreeds;
         }
-        catch (IOException event) {
-            throw new BreedNotFoundException(event.getMessage());
+        catch (IOException e) {
+            throw new BreedNotFoundException(e.getMessage());
         }
     }
 }
